@@ -11,7 +11,7 @@ LUA_PACKAGE := lua
 INSTALL_CMOD := $(shell pkg-config --variable=INSTALL_CMOD $(LUA_PACKAGE))
 
 ifeq ($(INSTALL_CMOD),)
-LUA_PACKAGE := lua5.4
+LUA_PACKAGE := lua5.3
 INSTALL_CMOD := $(shell pkg-config --variable=INSTALL_CMOD $(LUA_PACKAGE))
 endif
 
